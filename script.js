@@ -343,7 +343,7 @@ function setupEventListeners() {
 
 // إرسال رسالة واتساب
 function sendWhatsAppMessage(formData) {
-    const phoneNumber = '01553479878';
+    const phoneNumber = '+201553479878';
     let message = '';
 
     if (appData.language === 'ar') {
