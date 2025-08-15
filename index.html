@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Theme Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- مرحلة التحميل الأولي -->
+    <div id="loading-screen">
+        <img src="hackii.jpg" alt="Hacker Image" id="hacker-img">
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- مرحلة الشاشة السوداء -->
+    <div id="black-screen"></div>
+
+    <!-- مرحلة الخطوط الخضراء -->
+    <div id="neon-lines">
+        <div class="line top"></div>
+        <div class="line right"></div>
+        <div class="line bottom"></div>
+        <div class="line left"></div>
+    </div>
+
+    <!-- مرحلة الرسوم المتحركة للهاكر -->
+    <div id="hacker-animation"></div>
+
+    <!-- مرحلة اختيار اللغة -->
+    <div id="language-selection" class="selection-screen">
+        <h2 id="lang-question">ما هي لغتك المفضلة؟</h2>
+        <div class="options">
+            <button class="option-btn" data-lang="ar">العربية</button>
+            <button class="option-btn" data-lang="en">English</button>
+        </div>
+    </div>
+
+    <!-- مرحلة اختيار العملة -->
+    <div id="currency-selection" class="selection-screen">
+        <h2 id="currency-question">ما هي عملتك المفضلة؟</h2>
+        <div class="options">
+            <button class="option-btn" data-currency="usd">الدولار</button>
+            <button class="option-btn" data-currency="eur">اليورو</button>
+            <button class="option-btn" data-currency="gbp">الجنيه</button>
+        </div>
+    </div>
+
+    <!-- شاشة الخدمات -->
+    <div id="services-screen">
+        <h2 id="services-title">خدماتنا</h2>
+        <div class="services-container" id="services-container">
+            <!-- سيتم إضافة البطاقات هنا ديناميكياً -->
+        </div>
+    </div>
+
+    <!-- شاشة تفاصيل الخدمة -->
+    <div id="service-details">
+        <h2 id="service-name-display"></h2>
+        <p id="service-price-display"></p>
+        <p id="service-description"></p>
+
+        <form id="order-form">
+            <div class="form-group">
+                <label for="full-name" id="full-name-label">الاسم الثلاثي</label>
+                <input type="text" id="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone" id="phone-label">رقم الجوال</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address" id="address-label">العنوان بالكامل</label>
+                <input type="text" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="notes" id="notes-label">وصف إضافي (اختياري)</label>
+                <textarea id="notes"></textarea>
+            </div>
+            <button type="submit" id="confirm-btn">تأكيد</button>
+        </form>
+    </div>
+
+    <!-- شاشة النهاية -->
+    <div id="confirmation-screen">
+        <h2 id="confirmation-message">تم إرسال التأكيد، سيتم التواصل معك خلال ٢٤ ساعة</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
